@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package v4;
+
+option java_multiple_files = true;
+option java_package = "com.tingshulien.proto.model.v4";
+
+message School {
+  string name = 1;
+  Address address = 2;
+}
+
+message Address {
+  string street = 1;
+  string city = 2;
+}

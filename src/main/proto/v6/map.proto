@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package v6;
+
+option java_multiple_files = true;
+option java_package = "com.tingshulien.proto.model.v6";
+
+enum BodyStyle {
+  UNKNOWN = 0;
+  SEDAN = 1;
+  CONVERTIBLE = 2;
+  HATCHBACK = 3;
+  WAGON = 4;
+  SUV = 5;
+  TRUCK = 6;
+  VAN = 7;
+}
+
+message Car {
+  string make = 1;
+  string model = 2;
+  int32 year = 3;
+  BodyStyle bodyStyle = 4;
+}
+
+message Dealer {
+  map<int32, Car> inventory = 1;
+}

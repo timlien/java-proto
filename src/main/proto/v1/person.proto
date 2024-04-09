@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package v1;
+
+option java_package = "com.tingshulien.proto.model.v1";
+
+message Person {
+  string name = 1;
+  int32 age = 2;
+}

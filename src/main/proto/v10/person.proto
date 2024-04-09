@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package v10;
+
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/timestamp.proto";
+
+option java_multiple_files = true;
+option java_package = "com.tingshulien.proto.model.v10";
+
+message Person {
+  string name = 1;
+  optional int32 age = 2;
+  google.protobuf.Int32Value height = 180;
+  google.protobuf.Timestamp birthday = 3;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package v9;
+
+import "v9/common/address.proto";
+import "v9/common/person.proto";
+
+option java_multiple_files = true;
+option java_package = "com.tingshulien.proto.model.v9";
+
+message Library {
+  string name = 1;
+  v9.common.Address address = 2;
+  v9.common.Person librarian = 3;
+}

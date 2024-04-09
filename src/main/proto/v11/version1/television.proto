@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package v11.version1;
+
+option java_multiple_files = true;
+option java_package = "com.tingshulien.proto.model.v11.version1";
+
+message Television {
+  string brand = 1;
+  int32 year = 2;
+}

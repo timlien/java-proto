@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package v9.common;
+
+option java_multiple_files = true;
+option java_package = "com.tingshulien.proto.model.v9.common";
+
+message Address {
+  string street = 1;
+  string city = 2;
+}
